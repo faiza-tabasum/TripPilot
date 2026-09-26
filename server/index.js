@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-const MODEL_NAME = 'gemini-3.8-flash'; // one place to change this everywhere
+const MODEL_NAME = 'gemini-2.5-flash-lite'; // one place to change this everywhere
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
